@@ -2,7 +2,6 @@
 using DevExpress.Diagram.Core.Native;
 using DevExpress.Mvvm.Native;
 using DevExpress.Xpf.Diagram;
-using System.Drawing;
 using System.Linq;
 using System.Windows;
 
