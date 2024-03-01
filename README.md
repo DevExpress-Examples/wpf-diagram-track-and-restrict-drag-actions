@@ -6,18 +6,18 @@
 
 # WPF Diagram Control - Track and Restrict Drag Actions
 
-This example demonstrates how to restrict different drag actions in the [Diagram Control](https://docs.devexpress.com/WPF/115046/controls-and-libraries/diagram-control).
+This example restricts different drag actions within the DevExpress [WPF Diagram Control](https://docs.devexpress.com/WPF/115046/controls-and-libraries/diagram-control).
 
-The `DiagramControl` allows you to use multiple events (raised at different moments) to customize or prohibit drag actions:
+The `DiagramControl` allows you to use multiple events (raised at different moments in time) to customize/prohibit drag operations:
 
 * The [AddingNewItem](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.AddingNewItem) event is raised when a user drags a new item to the canvas.
-* The [BeforeItemsMoving](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.BeforeItemsMoving) event is raised when a user initiates the item drag/move action. This event allows you to customize dragged items.
-* The [ItemsMoving](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.ItemsMoving) event is raised during the item drag/move action. This event allows you to restrict this action based on stage, item position, and item parent.
+* The [BeforeItemsMoving](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.BeforeItemsMoving) event is raised when a user initiates an item drag/move action. This event allows you to customize dragged items.
+* The [ItemsMoving](https://docs.devexpress.com/WPF/DevExpress.Xpf.Diagram.DiagramControl.ItemsMoving) event is raised during item drag/move operations. This event allows you to restrict this action based on stage, item position, and item parent.
 
-This example demonstrates how to handle these events to implement the following restrictions:
+By handling these events, you can introduce the following restrictions:
 
 * You cannot drop "Rectangle" and "Ellipse" shapes to the canvas.
-* You cannot move the "Triangle" shape after you drop it to the canvas.
+* You cannot move the "Triangle" shape once you drop it onto the canvas.
 * You cannot move the "RightTriangle" shape to a container if it contains at least one "RightTriangle" shape.
 * You cannot drop the "Pentagon" shape near other shapes.
 
